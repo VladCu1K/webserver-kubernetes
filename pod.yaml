@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webserver-pod
+  labels:
+    app: webserver
+spec:
+  containers:
+  - name: webserver
+    image: vladcuk/docker123:webserver2
+    ports:
+    - containerPort: 80
